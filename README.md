@@ -1,11 +1,11 @@
 # GitHub Practical Test – Personal Portfolio
 
 ## Student Details
-- **Full Name:** Enter your full name
-- **URN Number:** Enter your URN number
-- **Semester:** Enter your semester
-- **Section:** Enter your section
-- **Subject:** Git and GitHub
+- **Full Name:** kartik naiknaware
+- **URN Number:** E25b032626
+- **Semester:** semester3
+- **Section:** sec B
+- **Subject:** Git and GitHub 
 
 ## Project Description
 A basic responsive personal portfolio webpage created using HTML, CSS and JavaScript.
