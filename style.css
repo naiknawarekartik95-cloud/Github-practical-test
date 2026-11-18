@@ -118,6 +118,7 @@ body {
   color: white;
   text-align: center;
   padding: 20px;
+  letter-spacing: 1px;
 }
 
 .message { margin-top: 12px; color: #315b91; font-weight: bold; }
