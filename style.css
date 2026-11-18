@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #243047;
+  background: #f7f9fc;
+}
+
+.site-header {
+  background: #14213d;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar {
+  max-width: 1050px;
+  margin: auto;
+  padding: 15px 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: white;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 22px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links a:hover { color: #fca311; }
+
+.menu-toggle {
+  display: none;
+  color: white;
+  background: transparent;
+  border: 0;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.hero {
+  text-align: center;
+  padding: 105px 20px;
+  color: white;
+  background: linear-gradient(135deg, #14213d, #315b91);
+}
+
+.hero h1 { font-size: clamp(2.3rem, 6vw, 4rem); margin: 10px 0; }
+.hero h1 span { color: #fca311; }
+.hero h2 { font-size: 1.35rem; font-weight: 500; margin-bottom: 12px; }
+.eyebrow { letter-spacing: 2px; font-size: .8rem; }
+
+.button {
+  display: inline-block;
+  margin-top: 22px;
+  padding: 11px 20px;
+  border: 0;
+  border-radius: 6px;
+  background: #fca311;
+  color: #14213d;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.section {
+  max-width: 950px;
+  margin: auto;
+  padding: 65px 22px;
+  text-align: center;
+}
+
+.section h2 { color: #14213d; margin-bottom: 18px; font-size: 2rem; }
+.alt { max-width: none; background: #eaf0f8; }
+.alt > * { max-width: 906px; margin-left: auto; margin-right: auto; }
+
+.skill-list, .project-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 22px;
+}
+
+.skill-list span, .project-card {
+  background: white;
+  padding: 18px 22px;
+  border-radius: 9px;
+  box-shadow: 0 4px 15px rgba(20, 33, 61, .08);
+}
+
+.project-card { flex: 1 1 220px; text-align: left; }
+.project-card h3 { color: #315b91; margin-bottom: 8px; }
+
+.site-footer {
+  background: #14213d;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.message { margin-top: 12px; color: #315b91; font-weight: bold; }
+
+@media (max-width: 650px) {
+  .menu-toggle { display: block; }
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    padding: 18px;
+    background: #14213d;
+    flex-direction: column;
+    text-align: center;
+  }
+  .nav-links.open { display: flex; }
+  .hero { padding: 75px 18px; }
+}
